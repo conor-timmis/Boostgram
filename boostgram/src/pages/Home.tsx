@@ -1,4 +1,3 @@
-// src/pages/Home.tsx
 import React, { useEffect, useState } from 'react';
 import api from '../services/api';
 
@@ -11,7 +10,6 @@ interface Post {
 const Home: React.FC = () => {
     const [posts, setPosts] = useState<Post[]>([]);
 
-    // Fetch posts when the component mounts
     useEffect(() => {
         const fetchPosts = async () => {
             try {
