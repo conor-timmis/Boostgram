@@ -1,0 +1,99 @@
+/* General Landing Page Styles */
+.landing-container {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Background section (Login Section) */
+.bg-section {
+    background: #f5f5f5;
+    background-image: url('path_to_your_image');
+    background-size: cover;
+    background-position: center;
+}
+
+.bg-section .card {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+}
+
+.bg-section h2 {
+    color: #333;
+}
+
+/* Marketing block */
+.text-block__description {
+    padding: 40px 0;
+}
+
+.text-block__description p {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #333;
+}
+
+/* Features Block */
+.block-bg {
+    background-color: #f0f0f0;
+    padding: 30px 0;
+}
+
+.block-divider-bottom svg {
+    fill: #ffffff;
+}
+
+.block-features {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.style-features-card {
+    padding: 20px;
+}
+
+.block-features__card-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size: 3rem;
+}
+
+.block-features__card-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.block-features__card-content p {
+    color: #333;
+    font-size: 1rem;
+}
+
+.features-card__preview {
+    text-align: center;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 0.875rem;
+}
+
+.footer a {
+    color: #0095f6;
+}
+
+@media (max-width: 767px) {
+    .bg-section .card {
+        padding: 20px;
+    }
+
+    .style-features-card {
+        margin-bottom: 20px;
+    }
+}
