@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Row, Col, Card, Form, Button } from 'react-bootstrap';
 import './LandingPage.css';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 const LandingPage: React.FC = () => {
     return (
@@ -44,12 +45,12 @@ const LandingPage: React.FC = () => {
                 </div>
             </div>
 
-            {/* New Section with Background and SVG Divider */}
             <div id="block_20" className="my-5">
                 <div className="block-bg">
                     <div className="bg-image"></div>
                 </div>
             </div>
+
             {/* Features Block */}
             <div id="block_32" className="my-5">
                 <div className="block-bg"></div>
@@ -62,15 +63,13 @@ const LandingPage: React.FC = () => {
                             {/* Feature 1 */}
                             <div className="col-md-6 style-features-card mb-4">
                                 <div className="w-100 editor__component-wrapper">
-                                    <div className="card block-features__wrapper" style={{ background: 'none', color: 'inherit', boxShadow: 'none' }}>
+                                    <div className="card block-features__wrapper">
                                         <div className="features-card__preview">
-                                            <div className="block-features__card-icon" style={{ height: '80px', width: '80px', fontSize: '80px', background: 'none', borderRadius: '48px' }}>
-                                                <span className="styled-card-hover">
-                                                    <span className="feature-block__icon fas fa-chart-line" style={{ color: '#0095f6' }}></span>
-                                                </span>
+                                            <div className="block-features__card-icon">
+                                                <i className="fas fa-chart-line" style={{ color: '#0095f6' }}></i>
                                             </div>
                                         </div>
-                                        <div className="card features-card" style={{ color: 'inherit' }}>
+                                        <div className="card features-card">
                                             <div className="block-features__card">
                                                 <div className="block-features__card-content">
                                                     <p><strong>Grow Your Audience</strong></p>
@@ -85,15 +84,13 @@ const LandingPage: React.FC = () => {
                             {/* Feature 2 */}
                             <div className="col-md-6 style-features-card mb-4">
                                 <div className="w-100 editor__component-wrapper">
-                                    <div className="card block-features__wrapper" style={{ background: 'none', color: 'inherit', boxShadow: 'none' }}>
+                                    <div className="card block-features__wrapper">
                                         <div className="features-card__preview">
-                                            <div className="block-features__card-icon" style={{ height: '80px', width: '80px', fontSize: '80px', background: 'none', borderRadius: '48px' }}>
-                                                <span className="styled-card-hover">
-                                                    <span className="feature-block__icon fas fa-tachometer-alt-fast" style={{ color: '#0095f6' }}></span>
-                                                </span>
+                                            <div className="block-features__card-icon">
+                                                <i className="fas fa-tachometer-alt" style={{ color: '#0095f6' }}></i>
                                             </div>
                                         </div>
-                                        <div className="card features-card" style={{ color: 'inherit' }}>
+                                        <div className="card features-card">
                                             <div className="block-features__card">
                                                 <div className="block-features__card-content">
                                                     <p><strong>Fast Delivery Speeds</strong></p>
@@ -108,15 +105,13 @@ const LandingPage: React.FC = () => {
                             {/* Feature 3 */}
                             <div className="col-md-6 style-features-card mb-4">
                                 <div className="w-100 editor__component-wrapper">
-                                    <div className="card block-features__wrapper" style={{ background: 'none', color: 'inherit', boxShadow: 'none' }}>
+                                    <div className="card block-features__wrapper">
                                         <div className="features-card__preview">
-                                            <div className="block-features__card-icon" style={{ height: '80px', width: '80px', fontSize: '80px', background: 'none', borderRadius: '48px' }}>
-                                                <span className="styled-card-hover">
-                                                    <span className="feature-block__icon fas fa-money-bill-wave" style={{ color: '#0095f6' }}></span>
-                                                </span>
+                                            <div className="block-features__card-icon">
+                                                <i className="fas fa-money-bill-wave" style={{ color: '#0095f6' }}></i>
                                             </div>
                                         </div>
-                                        <div className="card features-card" style={{ color: 'inherit' }}>
+                                        <div className="card features-card">
                                             <div className="block-features__card">
                                                 <div className="block-features__card-content">
                                                     <p><strong>Cheapest In The Market</strong></p>
@@ -131,15 +126,13 @@ const LandingPage: React.FC = () => {
                             {/* Feature 4 */}
                             <div className="col-md-6 style-features-card mb-4">
                                 <div className="w-100 editor__component-wrapper">
-                                    <div className="card block-features__wrapper" style={{ background: 'none', color: 'inherit', boxShadow: 'none' }}>
+                                    <div className="card block-features__wrapper">
                                         <div className="features-card__preview">
-                                            <div className="block-features__card-icon" style={{ height: '80px', width: '80px', fontSize: '80px', background: 'none', borderRadius: '48px' }}>
-                                                <span className="styled-card-hover">
-                                                    <span className="feature-block__icon fas fa-trophy" style={{ color: '#0095f6' }}></span>
-                                                </span>
+                                            <div className="block-features__card-icon">
+                                                <i className="fas fa-trophy" style={{ color: '#0095f6' }}></i>
                                             </div>
                                         </div>
-                                        <div className="card features-card" style={{ color: 'inherit' }}>
+                                        <div className="card features-card">
                                             <div className="block-features__card">
                                                 <div className="block-features__card-content">
                                                     <p><strong>Top Quality</strong></p>
@@ -150,6 +143,7 @@ const LandingPage: React.FC = () => {
                                     </div>
                                 </div>
                             </div>
+
                         </div>
                     </div>
                 </div>
