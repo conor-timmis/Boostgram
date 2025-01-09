@@ -1,5 +1,5 @@
 import React from 'react';
-import './LandingPage.css';
+import '../styles/LandingPage.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
 const LandingPage: React.FC = () => {

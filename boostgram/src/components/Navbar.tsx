@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import './Navbar.css'; // Import custom CSS for styling
-import '@fortawesome/fontawesome-free/css/all.min.css'; // Import FontAwesome CSS
+import '../styles/Navbar.css';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 const Navbar: React.FC = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
