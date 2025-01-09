@@ -64,11 +64,11 @@
   
   .navbar .nav-links {
     display: flex;
-    gap: 1.6rem; /* Spacing between each icon-link pair */
+    gap: 1.4rem;
     list-style-type: none;
-    justify-content: center; /* Center the nav-links horizontally */
-    margin-top: 1%;
-    margin-right: 32%;
+    justify-content: center;
+    margin-top: 1vh;
+    margin-right: 25vh;
 }
 
 /* Center the icon and text for each nav item */
