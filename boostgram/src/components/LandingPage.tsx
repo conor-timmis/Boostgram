@@ -6,7 +6,7 @@ const LandingPage: React.FC = () => {
     return (
         <div className="landing-container">
             {/* Background image container (Login Section) */}
-            <section className="bg-section">
+            <section id="Login" className="bg-section">
                 <div className="login-container">
                     <div className="card p-4 shadow-lg">
                         <div className="card-body">
@@ -27,15 +27,15 @@ const LandingPage: React.FC = () => {
                 </div>
             </section>
 
-            {/* Marketing Block */}
-            <div className="text-block__description my-5">
+            {/* Registration Block */}
+            <section id="features" className="text-block__description my-5">
                 <p className="text-center">
                     Are you looking for a quick way to increase your online presence? We can help!
                 </p>
-            </div>
+            </section>
 
             {/* Features Block */}
-            <div className="block-features my-5">
+            <section id="" className="block-features my-5">
                 <div className="container">
                     <div className="row align-items-start justify-content-start">
                         {/* Feature 1 */}
@@ -107,7 +107,7 @@ const LandingPage: React.FC = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
 
             {/* Footer */}
             <footer className="footer text-center my-5">
