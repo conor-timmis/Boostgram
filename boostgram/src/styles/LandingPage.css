@@ -148,6 +148,17 @@ html, body {
     overflow: hidden;
 }
 
+/* Pricing Section */
+.pricing-section .btn {
+    min-width: 120px;
+    font-size: 16px;
+}
+
+.slider {
+    width: 100%;
+    margin: 20px 0;
+}
+
 /* Footer */
 .footer {
     background-color: #333;
