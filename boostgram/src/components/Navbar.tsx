@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import '../styles/Navbar.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
@@ -44,9 +45,10 @@ const Navbar: React.FC = () => {
                         </a>
                     </li>
                     <li>
-                        <a href="/terms">
+                        {/* Link to the Terms and Conditions page */}
+                        <Link to="/terms">
                             <i className="fas fa-file-contract"></i> Terms
-                        </a>
+                        </Link>
                     </li>
                 </ul>
             </nav>
