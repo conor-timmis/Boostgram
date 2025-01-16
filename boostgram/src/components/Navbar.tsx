@@ -30,7 +30,7 @@ const Navbar: React.FC = () => {
                 {/* Navigation Links */}
                 <ul className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
                     <li>
-                        <a href="/#Login">
+                        <a href="/#login">
                             <i className="fas fa-sign-in-alt"></i> Sign In
                         </a>
                     </li>

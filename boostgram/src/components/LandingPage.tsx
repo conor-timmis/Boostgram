@@ -16,7 +16,7 @@ const LandingPage: React.FC = () => {
     return (
         <div className="landing-container">
             {/* Background image container (Login Section) */}
-            <section id="Login" className="bg-section">
+            <section id="login" className="bg-section">
                 <div className="login-container">
                     <div className="card p-4 shadow-lg">
                         <div className="card-body">
