@@ -13,7 +13,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0.8rem 1.6rem;
+  padding: 1rem 1.6rem;
   background-color: rgba(31, 31, 31, 0.8);
   border-radius: 50px;
   width: auto;
@@ -35,10 +35,10 @@
 
 @keyframes glow {
   0%, 100% {
-      text-shadow: 0 0 5px gold, 0 0 10px gold, 0 0 20px gold, 0 0 40px goldenrod, 0 0 60px goldenrod;
+    text-shadow: 0 0 5px gold, 0 0 10px gold, 0 0 20px gold, 0 0 40px goldenrod, 0 0 60px goldenrod;
   }
   50% {
-      text-shadow: 0 0 10px gold, 0 0 20px gold, 0 0 30px gold, 0 0 50px goldenrod, 0 0 80px goldenrod;
+    text-shadow: 0 0 10px gold, 0 0 20px gold, 0 0 30px gold, 0 0 50px goldenrod, 0 0 80px goldenrod;
   }
 }
 
@@ -48,20 +48,7 @@
   100% { background-position: 0% 50%; }
 }
 
-.navbar .menu-icon {
-  display: none;
-  cursor: pointer;
-}
-
-.navbar .menu-icon .bar {
-  display: block;
-  width: 25px;
-  height: 4px;
-  margin: 5px;
-  background-color: white;
-  border-radius: 10px;
-}
-
+/* Navigation Links */
 .navbar .nav-links {
   display: flex;
   gap: 1.4rem;
@@ -71,7 +58,6 @@
   margin-right: 25vh;
 }
 
-/* Center the icon and text for each nav item */
 .navbar .nav-links li a,
 .navbar .nav-links li .logout-button {
   display: flex;
@@ -94,13 +80,13 @@
   font-size: 1.2rem;
 }
 
-/* Add specific hover effect for all nav items */
+/* Hover Effect */
 .navbar .nav-links li a:hover,
 .navbar .nav-links li .logout-button:hover {
   color: #bbb;
 }
 
-/* Ensure the logout button inherits the same styles */
+/* Specific Style for Logout Button */
 .navbar .nav-links li .logout-button {
   padding: 0.5rem 1rem;
   border-radius: 5px;
@@ -113,13 +99,11 @@
   color: #bbb;
 }
 
-.btn.btn-link.nav-link {
-  color: #fff;
+/* Styling for Nav Link Buttons */
+.navbar .nav-links li a {
+  font-size: 1.1rem;
 }
 
-.btn.btn-link.nav-link:hover {
-  color: #bbb;
-}
 
 /* Mobile Menu Styles */
 .navbar .nav-links.active {
@@ -136,27 +120,27 @@
 
 @media (max-width: 768px) {
   .navbar .menu-icon {
-      display: block;
+    display: block;
   }
 
   .navbar .nav-links {
-      display: none;
-      flex-direction: column;
-      background-color: rgba(10, 10, 10, 0.9);
-      position: absolute;
-      top: 60px;
-      right: 0;
-      left: 0;
-      padding: 1rem 0;
-      border-radius: 10px;
-      box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
+    display: none;
+    flex-direction: column;
+    background-color: rgba(10, 10, 10, 0.9);
+    position: absolute;
+    top: 60px;
+    right: 0;
+    left: 0;
+    padding: 1rem 0;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
   }
 
   .navbar .nav-links li {
-      text-align: center;
+    text-align: center;
   }
 
   .navbar .nav-links.active {
-      display: flex;
+    display: flex;
   }
 }
