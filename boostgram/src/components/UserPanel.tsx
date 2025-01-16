@@ -1,26 +1,11 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
 import '../styles/UserPanel.css';
 
-interface UserPanelProps {
-    onLogout: () => void;
-}
-
-const UserPanel: React.FC<UserPanelProps> = ({ onLogout }) => {
+const UserPanel: React.FC = () => {
     const [activeTab, setActiveTab] = useState<'coins' | 'profile' | 'services'>('coins');
-    const navigate = useNavigate();
-
-    const handleLogout = () => {
-        onLogout();
-        navigate('/');
-    };
 
     return (
         <div className="user-panel-container">
-            <button className="logout-btn" onClick={handleLogout}>
-                <i className="fas fa-sign-out-alt"></i> Logout
-            </button>
-
             {/* Tabs */}
             <div className="tabs">
                 {['coins', 'profile', 'services'].map((tab) => (
