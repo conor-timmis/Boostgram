@@ -1,10 +1,21 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import '../styles/LandingPage.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
 const LandingPage: React.FC = () => {
+    const [username, setUsername] = useState('');
+    const [password, setPassword] = useState('');
     const [pricingValue, setPricingValue] = useState(100); // Initial value for slider
     const [metric, setMetric] = useState<'likes' | 'followers' | 'comments'>('likes'); // Default metric
+    const [errorMessage, setErrorMessage] = useState('');
+    const navigate = useNavigate();
+
+    const mockCredentials = {
+        username: 'testuser',
+        password: 'testpassword',
+    };
+
     const basePrices = {
         likes: 0.05,
         followers: 0.10,
@@ -12,6 +23,16 @@ const LandingPage: React.FC = () => {
     };
 
     const calculatePrice = (units: number): number => units * basePrices[metric];
+
+    const handleLogin = (e: React.FormEvent) => {
+        e.preventDefault();
+        if (username === mockCredentials.username && password === mockCredentials.password) {
+            setErrorMessage('');
+            navigate('/user-panel');
+        } else {
+            setErrorMessage('Invalid username or password. Please try again.');
+        }
+    };
 
     return (
         <div className="landing-container">
@@ -21,13 +42,28 @@ const LandingPage: React.FC = () => {
                     <div className="card p-4 shadow-lg">
                         <div className="card-body">
                             <h2 className="text-center mb-4">Welcome to Boostgram</h2>
-                            <form>
+                            <form onSubmit={handleLogin}>
                                 <div className="mb-3">
-                                    <input type="text" className="form-control" placeholder="Username" />
+                                    <input
+                                        type="text"
+                                        className="form-control"
+                                        placeholder="Username"
+                                        value={username}
+                                        onChange={(e) => setUsername(e.target.value)}
+                                    />
                                 </div>
                                 <div className="mb-3">
-                                    <input type="password" className="form-control" placeholder="Password" />
+                                    <input
+                                        type="password"
+                                        className="form-control"
+                                        placeholder="Password"
+                                        value={password}
+                                        onChange={(e) => setPassword(e.target.value)}
+                                    />
                                 </div>
+                                {errorMessage && (
+                                    <p className="text-danger text-center">{errorMessage}</p>
+                                )}
                                 <button type="submit" className="btn btn-primary w-100">
                                     Login
                                 </button>
