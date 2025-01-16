@@ -21,7 +21,8 @@ const App: React.FC = () => {
   return (
     <Router>
       <div className="App">
-        <Navbar />
+        {/* Pass isAuthenticated and onLogout to Navbar */}
+        <Navbar isAuthenticated={isAuthenticated} onLogout={logout} />
         <Routes>
           {/* Public Routes */}
           <Route path="/" element={<LandingPage onLogin={login} />} />
