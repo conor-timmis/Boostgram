@@ -30,7 +30,7 @@ const App: React.FC = () => {
 
           {/* Protected Route for UserPanel */}
           <Route
-            path="/user-panel"
+            path="/panel"
             element={
               <ProtectedRoute>
                 <UserPanel onLogout={logout} />

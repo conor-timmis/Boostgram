@@ -33,7 +33,7 @@ const LandingPage: React.FC<LandingPageProps> = ({ onLogin }) => {
         if (username === mockCredentials.username && password === mockCredentials.password) {
             setErrorMessage('');
             onLogin();
-            navigate('/user-panel');
+            navigate('/panel');
         } else {
             setErrorMessage('Invalid username or password. Please try again.');
         }
