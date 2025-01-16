@@ -3,7 +3,11 @@ import { useNavigate } from 'react-router-dom';
 import '../styles/LandingPage.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
-const LandingPage: React.FC = () => {
+interface LandingPageProps {
+    onLogin: () => void;
+}
+
+const LandingPage: React.FC<LandingPageProps> = ({ onLogin }) => {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const [pricingValue, setPricingValue] = useState(100); // Initial value for slider
@@ -28,6 +32,7 @@ const LandingPage: React.FC = () => {
         e.preventDefault();
         if (username === mockCredentials.username && password === mockCredentials.password) {
             setErrorMessage('');
+            onLogin();
             navigate('/user-panel');
         } else {
             setErrorMessage('Invalid username or password. Please try again.');
