@@ -151,7 +151,7 @@ const LandingPage: React.FC<LandingPageProps> = ({ onLogin }) => {
                                 <div className="features-card">
                                     <div className="block-features__card-content">
                                         <p><strong>Top Quality</strong></p>
-                                        <p>We make sure that all of our services are working, unlike any other panel.</p>
+                                        <p>We make sure that all of our services are working.</p>
                                     </div>
                                 </div>
                             </div>
