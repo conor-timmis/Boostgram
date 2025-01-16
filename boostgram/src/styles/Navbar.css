@@ -1,117 +1,145 @@
 /* General Navbar Styles */
 .navbar-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 10;
-    margin-left: 15%;
-    margin-right: 15%;
-  }
-  
-  .navbar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0.8rem 1.6rem;
-    background-color: rgba(31, 31, 31, 0.8);
-    border-radius: 50px;
-    width: auto;
-    margin: 15px auto;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(10px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  margin-left: 15%;
+  margin-right: 15%;
 }
-  
-  .navbar .logo a {
-    color: gold;
-    font-size: 1.4rem;
-    font-weight: bold;
-    text-decoration: none;
-    text-shadow: 0 0 5px gold, 0 0 10px gold, 0 0 20px gold, 0 0 40px goldenrod, 0 0 60px goldenrod;
-    position: relative;
-    animation: glow 2s infinite, sparkle 3s infinite;
-    margin-left: 10px;
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8rem 1.6rem;
+  background-color: rgba(31, 31, 31, 0.8);
+  border-radius: 50px;
+  width: auto;
+  margin: 15px auto;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+}
+
+.navbar .logo a {
+  color: gold;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-decoration: none;
+  text-shadow: 0 0 5px gold, 0 0 10px gold, 0 0 20px gold, 0 0 40px goldenrod, 0 0 60px goldenrod;
+  position: relative;
+  animation: glow 2s infinite, sparkle 3s infinite;
+  margin-left: 10px;
 }
 
 @keyframes glow {
-    0%, 100% {
-        text-shadow: 0 0 5px gold, 0 0 10px gold, 0 0 20px gold, 0 0 40px goldenrod, 0 0 60px goldenrod;
-    }
-    50% {
-        text-shadow: 0 0 10px gold, 0 0 20px gold, 0 0 30px gold, 0 0 50px goldenrod, 0 0 80px goldenrod;
-    }
+  0%, 100% {
+      text-shadow: 0 0 5px gold, 0 0 10px gold, 0 0 20px gold, 0 0 40px goldenrod, 0 0 60px goldenrod;
+  }
+  50% {
+      text-shadow: 0 0 10px gold, 0 0 20px gold, 0 0 30px gold, 0 0 50px goldenrod, 0 0 80px goldenrod;
+  }
 }
 
 @keyframes sparkle {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
-  
-  .navbar .menu-icon {
-    display: none;
-    cursor: pointer;
-  }
-  
-  .navbar .menu-icon .bar {
-    display: block;
-    width: 25px;
-    height: 4px;
-    margin: 5px;
-    background-color: white;
-    border-radius: 10px;
-  }
-  
-  .navbar .nav-links {
-    display: flex;
-    gap: 1.4rem;
-    list-style-type: none;
-    justify-content: center;
-    margin-top: 1vh;
-    margin-right: 25vh;
+
+.navbar .menu-icon {
+  display: none;
+  cursor: pointer;
+}
+
+.navbar .menu-icon .bar {
+  display: block;
+  width: 25px;
+  height: 4px;
+  margin: 5px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.navbar .nav-links {
+  display: flex;
+  gap: 1.4rem;
+  list-style-type: none;
+  justify-content: center;
+  margin-top: 1vh;
+  margin-right: 25vh;
 }
 
 /* Center the icon and text for each nav item */
-.navbar .nav-links li a {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    font-size: 1rem;
-    font-weight: 500;
-    transition: color 0.3s ease;
+.navbar .nav-links li a,
+.navbar .nav-links li .logout-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  border: none;
+  background: transparent;
+  cursor: pointer;
 }
 
-.navbar .nav-links li a i {
-    margin-bottom: 0.1rem;
-    font-size: 1.2rem;
+.navbar .nav-links li a i,
+.navbar .nav-links li .logout-button i {
+  margin-bottom: 0.1rem;
+  font-size: 1.2rem;
 }
 
-/* Hover effect */
-.navbar .nav-links li a:hover {
-    color: #bbb;
+/* Add specific hover effect for all nav items */
+.navbar .nav-links li a:hover,
+.navbar .nav-links li .logout-button:hover {
+  color: #bbb;
 }
-  
-  /* Mobile Menu Styles */
-  .navbar .nav-links.active {
-    display: block;
-  }
-  
-  .navbar .nav-links {
-    display: flex;
-  }
-  
-  .navbar .nav-links li {
-    padding: 0.5rem 1rem;
-  }
-  
-  @media (max-width: 768px) {
-    .navbar .menu-icon {
+
+/* Ensure the logout button inherits the same styles */
+.navbar .nav-links li .logout-button {
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.navbar .nav-links li .logout-button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #bbb;
+}
+
+.btn.btn-link.nav-link {
+  color: #fff;
+}
+
+.btn.btn-link.nav-link:hover {
+  color: #bbb;
+}
+
+/* Mobile Menu Styles */
+.navbar .nav-links.active {
+  display: block;
+}
+
+.navbar .nav-links {
+  display: flex;
+}
+
+.navbar .nav-links li {
+  padding: 0.5rem 1rem;
+}
+
+@media (max-width: 768px) {
+  .navbar .menu-icon {
       display: block;
-    }
-  
-    .navbar .nav-links {
+  }
+
+  .navbar .nav-links {
       display: none;
       flex-direction: column;
       background-color: rgba(10, 10, 10, 0.9);
@@ -122,14 +150,13 @@
       padding: 1rem 0;
       border-radius: 10px;
       box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
-    }
-  
-    .navbar .nav-links li {
-      text-align: center;
-    }
-  
-    .navbar .nav-links.active {
-      display: flex;
-    }
   }
-  
+
+  .navbar .nav-links li {
+      text-align: center;
+  }
+
+  .navbar .nav-links.active {
+      display: flex;
+  }
+}
