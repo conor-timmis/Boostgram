@@ -6,7 +6,6 @@ html, body {
     overflow-x: hidden;
     box-sizing: border-box;
     background: #1e1e2f !important;
-    color: white; /* Set the default text color to white */
 }
 
 /* Landing container */
@@ -81,7 +80,6 @@ html, body {
 .text-block__description p {
     font-size: 1.25rem;
     font-weight: 600;
-    color: white;
     text-align: center;
 }
 
@@ -167,7 +165,7 @@ html, body {
 
 /* Footer */
 .footer {
-    color: white; /* Set footer text color to white */
+    color: white;
     padding: 20px;
     text-align: center;
 }
@@ -180,7 +178,7 @@ html, body {
 }
 
 .footer a {
-    color: gold; /* Link color to match the gold theme */
+    color: gold;
 }
 
 /* Responsive Adjustments */
