@@ -28,7 +28,7 @@ const UserPanel: React.FC = () => {
                         <h2>Buy Coins</h2>
                         <p>Select the amount of coins to purchase:</p>
                         {['100 Coins - $10', '500 Coins - $45', '1000 Coins - $80'].map((option) => (
-                            <button key={option} className="btn btn-primary">
+                            <button key={option} className="buy-coins-btn">
                                 {option}
                             </button>
                         ))}

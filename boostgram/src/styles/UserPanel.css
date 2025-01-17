@@ -33,6 +33,7 @@ li {
     cursor: pointer;
     transition: background-color 0.3s ease;
     border-radius: 5px;
+    margin: 0 5px;
 }
 
 .tab:hover {
@@ -52,6 +53,32 @@ li {
     padding: 20px;
 }
 
+/* Styling for "Buy Coins" Buttons */
+.buy-coins-btn {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    margin: 10px auto;
+    padding: 12px 20px;
+    font-size: 16px;
+    text-align: center;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.buy-coins-btn:hover {
+    background-color: #45a049;
+}
+
+.buy-coins-btn:focus {
+    outline: none;
+}
+
+/* Form and Input Fields */
 .form-group {
     margin-bottom: 15px;
 }
@@ -103,6 +130,7 @@ input[type="text"], input[type="email"] {
     font-size: 16px;
 }
 
+/* Default button styling */
 button.btn-primary {
     background-color: #4CAF50;
     color: white;
