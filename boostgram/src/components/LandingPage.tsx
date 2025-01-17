@@ -16,8 +16,8 @@ const LandingPage: React.FC<LandingPageProps> = ({ onLogin }) => {
     const navigate = useNavigate();
 
     const mockCredentials = {
-        username: 'testuser',
-        password: 'testpassword',
+        username: '1',
+        password: '1',
     };
 
     const basePrices = {
