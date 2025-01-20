@@ -1,7 +1,9 @@
 import axios from "axios";
 
-axios.defaults.baseURL = "https://google.com/";
-axios.defaults.headers.post["Content-Type"] = "multipart/form-data";
+// Update baseURL to point to your local backend
+axios.defaults.baseURL = "http://localhost:5000";
+
+axios.defaults.headers.post["Content-Type"] = "application/json";
 axios.defaults.withCredentials = true;
 
 export const axiosReq = axios.create();
