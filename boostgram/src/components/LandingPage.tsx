@@ -80,7 +80,7 @@ const LandingPage: React.FC<LandingPageProps> = ({ onLogin }) => {
 
             {/* Registration Block */}
             <section id="features" className="text-block__description my-5">
-                <p className="text-center">
+                <p className="text-center" style={{ color: '#fff' }}>
                     Are you looking for a quick way to increase your online presence? We can help!
                 </p>
             </section>
